@@ -1,7 +1,7 @@
 import { TOGGLE_MENU } from '../actions/CartMenuActions';
 
 const initialState = {
-  isMenuOpen: false
+  isMenuOpen: true
 };
 
 export default (state = initialState, action) => {

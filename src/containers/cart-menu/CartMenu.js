@@ -14,9 +14,6 @@ class CartMenu extends React.Component {
   static propTypes = {
     products: PropTypes.array
   }
-  constructor(props) {
-    super(props);
-  }
 
   _handleAddItem = (product) => {
     this.props.addProduct(product);
@@ -46,24 +43,24 @@ class CartMenu extends React.Component {
   };
 
   render() {
-    return (
-      <div className="cartContainer">
-        <div className="buttonMenuContainer">
-          <button onClick={this._closeMenu} className="buttonClose">X</button>
+    if (this.props.isMenuOpen) {
+      return (
+        <div className="cartContainer">
+          <span className="info">{this.props.isMenuOpen}</span>
+          <div className="buttonMenuContainer">
+            <button onClick={this._closeMenu} className="buttonClose">X</button>
+          </div>
+          {this._renderItems()}
         </div>
-        {this._renderItems()}
-      </div>
-    );
+      );
+    }
+    return null;
   }
-}
-
-CartMenu.propTypes = {
-  products: PropTypes.array
 }
 
 const mapStateToProps = ({ products, menu }) => ({
   products: products.products,
-
+  isMenuOpen: menu.isMenuOpen
 });
 
 export default connect(mapStateToProps, {
