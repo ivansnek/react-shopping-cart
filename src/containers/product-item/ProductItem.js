@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import './ProductItem.css';
 import { Button} from '../../components';
-import Images from '../../utils/Images';
 
 class ProductItem extends React.PureComponent {
   static propTypes = {
@@ -11,6 +10,7 @@ class ProductItem extends React.PureComponent {
     price: PropTypes.number,
     size: PropTypes.string,
     color: PropTypes.string,
+    icon: PropTypes.string,
     description: PropTypes.string,
     addItem: PropTypes.func
   };
@@ -20,19 +20,22 @@ class ProductItem extends React.PureComponent {
   }
 
   _addProduct = () => {
-    // this.props.addItem();
+    const item = { ...this.props };
+    item.quantity = 1;
+    this.props.addProduct(this.props);
   }
+
   render() {
-    const { name, price, color, size, description } = this.props;
+    const { name, price, color, size, description, icon } = this.props;
     return (
       <div className="itemContainer">
-        <img src={Images.shirt} alt='Image' className='logoImage'/>
+        <img src={icon} alt='Image' className='logoImage'/>
         <div className="itemDescription">
           <h2>{name}</h2>
-          <span>Price:{price}</span>
-          <span>Size:{size}</span>
-          <span>Color:{color}</span>
-          <span>Description{description}</span>
+          <span>Price: {price}</span>
+          <span>Size: {size}</span>
+          <span>Color: {color}</span>
+          <span>Description{`\n\t${description}`}</span>
           <Button color="black" onPress={this._addProduct}>
             Add to Cart
           </Button>

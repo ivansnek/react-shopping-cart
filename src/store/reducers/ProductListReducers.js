@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import { ADD_PRODUCT, DELETE_PRODUCT } from '../actions/ProductListActions';
 
 const initialState = {
@@ -9,7 +10,7 @@ export default (state = initialState, action) => {
     case ADD_PRODUCT:
       return {
         ...state,
-        products: [ ...state.products, action.payload ]
+        products: _.uniqBy([ ...state.products, action.payload ], 'name')
       }
     case DELETE_PRODUCT:
       let newProducts = state.products.map(item => item.id !== action.payload.id);

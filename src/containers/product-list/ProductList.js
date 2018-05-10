@@ -7,6 +7,7 @@ import { addProduct, deleteProduct } from '../../store/actions/ProductListAction
 
 import './ProductList.css';
 import ProductItem from '../product-item/ProductItem';
+import Images from '../../utils/Images';
 const productList = require('../../utils/fixtures/product-list.json');
 
 class ProductList extends React.Component {
@@ -40,6 +41,7 @@ class ProductList extends React.Component {
         price={price}
         color={color}
         size={size}
+        icon={Images.shirt}
         description={description}
         addProduct={this._addProduct}
       />
