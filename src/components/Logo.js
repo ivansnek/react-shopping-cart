@@ -1,10 +1,12 @@
 import React from 'react';
+
 import './Logo.css';
+import Images from '../utils/Images';
 
 export default function(){
   return (
     <div className='logoContainer'>
-      <img src={require('../assets/logo.png')} alt='Logo' className='logoImage'/>
+      <img src={Images.logo} alt='Logo' className='logoImage'/>
     </div>
   )
 }

@@ -1,11 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+//Actions
+import { addProduct, deleteProduct } from '../../store/actions/ProductListActions';
 
 import './ProductList.css';
 import ProductItem from '../product-item/ProductItem';
 const productList = require('../../utils/fixtures/product-list.json');
 
 class ProductList extends React.Component {
+  static propTypes = {
+    products: PropTypes.array
+  };
 
   constructor(props) {
     super(props);
@@ -14,13 +21,27 @@ class ProductList extends React.Component {
     }
   }
 
+  _addProduct = product => {
+    this.props.addProduct(product);
+  }
+
   _renderProductList() {
-    return this.state.products.map(({ name, id, price, color, size}) =>
+    return this.state.products.map(({
+      name,
+      id,
+      price,
+      color,
+      size,
+      description
+    }) =>
       <ProductItem
         key={id}
         name={name}
         price={price}
-        color={size}
+        color={color}
+        size={size}
+        description={description}
+        addProduct={this._addProduct}
       />
     );
   }
@@ -34,8 +55,9 @@ class ProductList extends React.Component {
   }
 }
 
-ProductList.propTypes = {
-  products: PropTypes.array
-}
-
-export default ProductList;
+const mapStateToProps = state => ({
+  products: state.products.products
+})
+export default connect(mapStateToProps, { addProduct, deleteProduct })(
+  ProductList
+);
