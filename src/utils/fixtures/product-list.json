@@ -1,0 +1,50 @@
+[
+  {
+      "id": 12312315124,
+      "name": "Fat Bike Outfitters",
+      "price": 24.95,
+      "size": "Small",
+      "color": "WHITE",
+      "description": "Sint aute proident commodo elit est labore ipsum ut eiusmod minim. Do elit minim velit nisi non cupidatat ea. Aute labore incididunt commodo nulla officia veniam. Incididunt magna amet nisi amet pariatur in magna culpa sunt irure minim officia officia. Et proident ullamco eiusmod sint officia occaecat tempor mollit non tempor velit ipsum incididunt non. Commodo occaecat ea ipsum quis ut laborum nisi ex nostrud ad quis minim commodo ipsum. Quis veniam anim ea nulla excepteur commodo laborum amet."
+  },
+  {
+    "id": 12215124,
+    "name": "Adventure Time",
+    "price": 14.95,
+    "size": "Small",
+    "color": "WHITE",
+    "description": "Sint aute proident commodo elit est labore ipsum ut eiusmod minim. Do elit minim velit nisi non cupidatat ea. Aute labore incididunt commodo nulla officia veniam. Incididunt magna amet nisi amet pariatur in magna culpa sunt irure minim officia officia. Et proident ullamco eiusmod sint officia occaecat tempor mollit non tempor velit ipsum incididunt non. Commodo occaecat ea ipsum quis ut laborum nisi ex nostrud ad quis minim commodo ipsum. Quis veniam anim ea nulla excepteur commodo laborum amet."
+  },
+  {
+    "id": 1232323523,
+    "name": "Rick and Morty",
+    "price": 24.95,
+    "size": "Small",
+    "color": "WHITE",
+    "description": "Sint aute proident commodo elit est labore ipsum ut eiusmod minim. Do elit minim velit nisi non cupidatat ea. Aute labore incididunt commodo nulla officia veniam. Incididunt magna amet nisi amet pariatur in magna culpa sunt irure minim officia officia. Et proident ullamco eiusmod sint officia occaecat tempor mollit non tempor velit ipsum incididunt non. Commodo occaecat ea ipsum quis ut laborum nisi ex nostrud ad quis minim commodo ipsum. Quis veniam anim ea nulla excepteur commodo laborum amet."
+  },
+  {
+    "id": 634734634,
+    "name": "South Park",
+    "price": 24.95,
+    "size": "Small",
+    "color": "WHITE",
+    "description": "Sint aute proident commodo elit est labore ipsum ut eiusmod minim. Do elit minim velit nisi non cupidatat ea. Aute labore incididunt commodo nulla officia veniam. Incididunt magna amet nisi amet pariatur in magna culpa sunt irure minim officia officia. Et proident ullamco eiusmod sint officia occaecat tempor mollit non tempor velit ipsum incididunt non. Commodo occaecat ea ipsum quis ut laborum nisi ex nostrud ad quis minim commodo ipsum. Quis veniam anim ea nulla excepteur commodo laborum amet."
+  },
+  {
+    "id": 234235,
+    "name": "Pickle Rick",
+    "price": 24.95,
+    "size": "Small",
+    "color": "WHITE",
+    "description": "Sint aute proident commodo elit est labore ipsum ut eiusmod minim. Do elit minim velit nisi non cupidatat ea. Aute labore incididunt commodo nulla officia veniam. Incididunt magna amet nisi amet pariatur in magna culpa sunt irure minim officia officia. Et proident ullamco eiusmod sint officia occaecat tempor mollit non tempor velit ipsum incididunt non. Commodo occaecat ea ipsum quis ut laborum nisi ex nostrud ad quis minim commodo ipsum. Quis veniam anim ea nulla excepteur commodo laborum amet."
+  },
+  {
+    "id": 467567,
+    "name": "Dragon Ball Z",
+    "price": 24.95,
+    "size": "Small",
+    "color": "WHITE",
+    "description": "Sint aute proident commodo elit est labore ipsum ut eiusmod minim. Do elit minim velit nisi non cupidatat ea. Aute labore incididunt commodo nulla officia veniam. Incididunt magna amet nisi amet pariatur in magna culpa sunt irure minim officia officia. Et proident ullamco eiusmod sint officia occaecat tempor mollit non tempor velit ipsum incididunt non. Commodo occaecat ea ipsum quis ut laborum nisi ex nostrud ad quis minim commodo ipsum. Quis veniam anim ea nulla excepteur commodo laborum amet."
+  }
+]

@@ -1,0 +1,15 @@
+.itemContainer{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5em;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.menuItem{
+  padding: 1em;
+}
+.cartImage{
+  width: 20px;
+  height: 20px;
+}
